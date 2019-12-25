@@ -1,0 +1,298 @@
+/*
+* @Author: Lenovo
+* @Date:   2019-12-18 14:53:04
+* @Last Modified by:   Lenovo
+* @Last Modified time: 2019-12-25 18:19:14
+*/
+*{
+	margin: 0 auto;
+}
+.wrapper{
+	height: 120px;
+	overflow: hidden;
+	margin: 0 auto;
+	background-color: rgb(0,80,50);
+}
+.wrapper1{
+	height: 20px;
+	background-color: rgb(255, 215, 0);
+}
+body{
+	background-color: #8B0000;
+}
+ol ul{
+	list-style: none;
+}
+a{
+	text-decoration:none;
+}
+li{
+	display: inline-block;
+}
+nav{
+	right: 200px;
+}
+/* 导航栏 */
+#logo{
+	width: 25%;
+	float: left;
+	margin-left: -20px;
+	margin-top: 10px;
+	display: inline-block;
+	position: absolute;
+}
+#nav1{
+    font-size: 0;
+    width: 900px;
+    /* 使块级元素水平居中 */
+    margin: 0 auto;
+    margin-left: 400px;
+}
+#nav1>li{
+    font-size: 24px;
+    display: inline-block;
+    width: 140px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+	margin-top: 50px;
+	padding:10px 10px 20px 10px ;
+    /*vertical-align: top;*/
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+#nav1>li:hover{
+    background: rgba(255,255,255,0.3);
+    border-bottom:1px solid rgba(255,255,255,0.7);
+}
+/* a标签的字体颜色只能加给a标签，不会继承父元素的 */
+/* :hover也是选择器，后面可以继续写选择器，构成后代选择器 */
+#nav1>li:hover >a{
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+}
+
+/* 轮播图 */
+.box{
+	width: 1200px;
+	height: 520px;
+	margin: 20px auto;
+	position: relative;
+	overflow: hidden;
+}
+.slider{
+	width: 8400px;
+	position: absolute;
+	left: -1200px;
+	top: 50px;
+}
+.slide{
+	width: 1200px;
+	overflow: hidden;
+	float: left;
+	margin: 0 auto;
+}
+.box>span{
+	display: block;
+	width: 30px;
+	height: 50px;
+	text-align: center;
+	cursor: pointer;
+	top: 255px;
+	line-height: 50px;
+	background-color: rgb(170, 10, 15);
+	font-size: 30px;
+	position: absolute;
+	opacity: 50%;
+}
+#left{
+	left: 30px;
+}
+#right{
+	right: 30px;
+}
+.nav{
+	position: absolute;
+	left: 500px;
+	bottom: 20px;
+}
+.nav>li{
+	float: left;
+	width: 20px;
+	height: 20px;
+	background: rgb(170, 10, 15);
+	cursor: pointer;
+	margin: 0 10px;
+	text-align: center;
+	border-radius: 50%;
+	opacity: 50%;
+}
+.nav .active{
+	background-color: #fff;
+	margin: 0 10px;
+	text-align: center;
+	color: white;
+}
+/*放大镜*/
+#box11{
+	margin: 0 auto;
+	background : url(images/mc.jpg) ; 
+
+}
+#img1{
+	width:1250px;
+	height:400px;
+	position:relative; 
+	margin:100px auto;
+	border: 1px dotted red;
+/* 	margin-left: 135px;  */
+
+}
+#img11{
+	width:400px;
+	height:400px;
+	position:absolute;
+	left:0;
+	top:0;
+
+}
+#slid{
+	width:150px;
+	height:150px;
+	position:absolute;
+	left:0;
+	top:0;
+	background:#CCC;
+	opacity:0.4;
+	cursor: move;
+	filter:alpha(opacity=40);
+	display:none;
+
+
+}
+#img12{
+	position:absolute;
+	right:450px;
+	top:0;
+	width:400px;
+	height:400px;
+	overflow:hidden;
+	display:none;
+}
+#Bimg{
+	position:absolute;
+	left:400px;
+	top:200px;
+
+}
+/* 介绍 */
+#itr1{
+	width:400px;
+	height:400px;
+	float: right;
+	right: 30px;
+	top: 60px;
+	font-size: 19px;
+	position:absolute;
+	color: peru;
+
+}
+/* 总括目录 */
+.ta{
+	height: 110px;
+	width: 1200px;
+	margin: 0 auto;
+	font-size: 18px;
+	border: 2px dashed #b90000;
+	margin-bottom: 30px;
+}
+.xjq{
+	cursor: pointer;
+}
+.ta li{
+	height: 20px;
+	width: 160px;
+	line-height: 30px;
+	text-align: center;
+	display: inline-block;
+	margin: 0 auto;
+}
+.ta li>a{
+	color: black;
+	font-family: "幼圆";
+	font-weight: 700;
+}
+.ta li:hover a{
+	color:rgb(48,158,12);
+}
+.ta li:link a{
+	color:rgb(48,158,12);
+}
+.ta1{
+	border-bottom: 2px dashed #b90000;
+	padding-top: 5px;
+}
+.ta2{
+	padding-top: 10px;
+}
+/* 香水单独介绍 */
+.box2{
+	width: 1200px;
+	height: 1300px;
+}
+.box21{
+	margin-top: 100px;
+	margin-bottom: 100px;
+	width: 1200px;
+	height: 400px;
+}
+.ppp{
+	height: 350px;
+	width: 500px;
+	position: absolute;
+	float: right;
+	right: 360px;
+	font-size: 30px;
+	padding-top: 50px;
+	border: 2px dotted rgb(0,80,50);
+	padding:10px 100px 0px 100px;
+	margin-top: 20px;
+	font-family: "幼圆";
+}
+.box22{
+	width: 1200px;
+	height: 400px;
+	
+}
+/* 回到顶端 */
+.tt{
+	display: inline;
+
+}
+.toTop{
+	height: 100px;
+	width: 100px;
+	position: absolute;
+	float: right;
+	right: 150px;
+	bottom:-1600px;
+}
+/* 底端 */
+.third{
+	background-color: rgb(99,10,30);
+	height: 120px;
+}
+.thi{
+	height: 100px;
+	width: 1200px;
+	margin: 0 auto;
+	color: white;
+	text-align: center;
+	padding-top: 20px;
+	line-height: 40px;
+}
+.thi a{
+	color: white;
+}
