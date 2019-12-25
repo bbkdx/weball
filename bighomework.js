@@ -1,0 +1,74 @@
+var span1=document.getElementById("span1");
+var span2=document.getElementById("span2");
+var span3=document.getElementById("span3");
+var span4=document.getElementById("span4");
+var up=document.getElementById("up");
+var on=document.getElementById("on");
+var kh=document.getElementById("kh");
+var xs=document.getElementById("xs");
+var l1=document.getElementById("l1");
+var l2=document.getElementById("l2");
+var right1=document.getElementById("right1");
+var right2=document.getElementById("right2");
+var right3=document.getElementById("right3");
+var right21=document.getElementById("right21");
+var right22=document.getElementById("right22");
+var right31=document.getElementById("right31");
+var right32=document.getElementById("right32");
+var right33=document.getElementById("right33");
+var wdzh=document.getElementById("wdzh");
+var gywm=document.getElementById("gywm");
+span1.onclick=function(){
+	l1.style.display="none";
+	l2.style.display="none";
+	wdzh.style.display="none";
+	gywm.style.display="none";
+	xs.style.display="none";
+	kh.style.display="inline";
+}
+span2.onclick=function(){
+	l1.style.display="none";
+	l2.style.display="none";
+	wdzh.style.display="none";
+	gywm.style.display="none";
+	kh.style.display="none";
+	xs.style.display="inline";
+}
+span3.onclick=function(){
+	l1.style.display="none";
+	l2.style.display="none";
+	xs.style.display="none";
+	gywm.style.display="none";
+	kh.style.display="none";
+	wdzh.style.display="inline";
+}
+span4.onclick=function(){
+	l1.style.display="none";
+	l2.style.display="none";
+	wdzh.style.display="none";
+	xs.style.display="none";
+	kh.style.display="none";
+	gywm.style.display="inline";
+}
+l1.onclick=function(){
+	right1.style.display="none";
+	right2.style.display="none";
+	right3.style.display="none";
+	right31.style.display="none";
+	right32.style.display="none";
+	right33.style.display="none";
+	right21.style.display="inline";
+	right22.style.display="inline";
+	right23.style.display="inline";
+}
+l2.onclick=function(){
+	right21.style.display="none";
+	right22.style.display="none";
+	right23.style.display="none";
+	right1.style.display="none";
+	right2.style.display="none";
+	right3.style.display="none";
+	right31.style.display="inline";
+	right32.style.display="inline";
+	right33.style.display="inline";
+}
