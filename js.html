@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>登录页面</title>
+	<style>
+		body{
+			background-image: url(a_02.jpg); 
+			background-position: 0px 30px
+			background-repeat: no-repeat;
+			background-size: 100%
+			background-color:rgba(255,255,255);
+			/*z-index: 0;*/
+		}
+		#nav-warp{
+		    background-color:black;
+		    width: 1300px;
+				}
+		#logo{
+			/*z-index: 2;*/
+			width: 300px;
+			float: left;
+			left: 50px;
+			height: 100px;
+			margin-left: -250px;
+			margin-top: 10px;
+			display: inline-block;
+			position: absolute;
+		}
+		#nav{
+		    font-size: 0;
+		    width: 1100px;
+		    /* 使块级元素水平居中 */
+		    margin: 0 auto;
+		}
+		#nav>li{
+		    font-size: 14px;
+		    display: inline-block;
+		    width: 140px;
+		    height: 50px;
+		    text-align: center;
+		    line-height: 50px;
+		    /*vertical-align: top;*/
+		}
+		a{
+			text-decoration: none;
+			color: white;
+		}
+		#nav>li:hover{
+		    background: rgba(255,255,255,0.3);
+		    border-bottom:1px solid rgba(255,255,255,0.7);
+		}
+		/* a标签的字体颜色只能加给a标签，不会继承父元素的 */
+		/* :hover也是选择器，后面可以继续写选择器，构成后代选择器 */
+		#nav>li:hover >a{
+		    color: rgba(255,255,255,0.8);
+		    text-decoration: none;
+		}
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		a{
+			text-decoration: none;
+			color: write;
+		}
+		.box1{
+			width: 350px;
+			height: 500px;
+			padding: 0 20px;
+			margin: 50px auto;
+			z-index: 5;
+			float: left;
+			display: block;
+			position: relative;
+			left: 950px;
+			background-color: rgba(255, 255, 255, 0.1);
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			top:20px;
+		}
+		.box2{
+			width: 350px;
+			height: 500px;
+			padding: 0 20px;
+			/*border: 2px solid orange;*/
+			margin: 50px auto;
+			z-index: 0;
+			float: left;
+			display: none;
+			position: relative;
+			left: 950px;
+			top: 20px;
+			background-color: rgba(255,255,255,0.1);
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+		}
+		.tit{
+			border-color: black;
+			/*border: 0px;*/
+			/*background-color: white;*/
+			margin-top: 25px;
+			margin-bottom: 30px;
+		}
+		.brand{
+			/*color: rgb(120, 120, 120);*/
+			font-size: 18px;
+			margin-right: 20px;
+			background-color: rgba(255,255,255,0.1);
+			position: relative;
+			top: 5px;
+			border: none;
+			color: rgba(128,118,105);
+		}
+		.bra{
+			padding-left: ;
+			padding-right: 25px;
+		}
+		.bra1{
+			padding-left: ;
+			padding-right: 25px;
+		}
+		.brand1{
+			border: none;
+			color: rgba(128,118,105);
+			font-size: 18px;
+			margin-right: 20px;
+			background-color: rgba(255,255,255,0.1);
+			top: 3px;
+		}
+		.inp{
+			width: 200px;
+			height: 30px;
+			text-indent: 8px;
+			border-color: ;
+		}
+		.notice{
+			height: 30px;
+			line-height: 30px;
+			font-size: 12px;
+		}
+
+		.code{
+			width: 150px;
+		}
+		.inp code{
+			border: none;
+		}
+		.getCode{
+			width: 100px;
+			height: 44px;
+			float: right;
+			border:none;
+			background-color: #000;
+			color: white;
+			position: relative;
+			left: -510px;
+			top: -5px;
+			left: -70px;
+		}
+		.codeImg{
+			height: 40px;
+		}
+		.btn{
+			background:#666;
+			width: 100%;
+			height: 40px;
+			border: none;
+			border-color: black;	
+			margin-top: 8px;
+			color:write;
+			border-radius: 3px;
+			position: relative;
+			top: 10px;
+		}
+		.btn2{
+			background: #666;
+			width: 100%;
+			height: 40px;
+			border: none;
+			border-color: black;
+			margin-top: 8px;
+			color: white;
+			border-radius: 3px;
+			position: relative;
+			top: 150px;
+		}
+		.checkbox{
+			color:  rgba(128,118,105);
+		}
+		.notice {
+			font-size: 12px;
+		}
+		.number{
+			border: none;
+			color: rgb(128,118,105);
+		}
+		.number1{
+			border: none;
+			color: rgb(128,118,105);
+		}
+	</style>
+</head>
+<body>
+	<div id="nav-warp">
+            <ul id="nav">
+            	<div id="logo">
+					<img src="阿玛尼logo.png">
+				</div>
+                <li>
+                    <a href="#">彩妆专区</a>
+                </li>
+                <li>
+                    <a href="#">香水专区</a>
+                </li>
+                <li>
+                    <a href="#">登录注册</a>
+                </li>
+                <li>
+                    <a href="#">关于我们</a>
+                </li>
+                <li>
+                    <a href="#">返回首页</a>
+                </li>
+            </ul>
+        </div>
+	<div class="box1">
+		<p class="tit">
+			<span class="bra"><button class="brand">用户注册</button></span>
+			<span><button class="brand">用户登录</button></span>
+		</p>
+		<span style="color: rgba(128,118,105)">手机号:</span>
+		<button class="number" style="background: rgba(255,255,255,0.1)">+ 86</button>
+		<input class="inp" type="text" placeholder="请输入手机号" style="background: rgba(255,255,255,0.1)">
+		<p class="notice"></p>
+		<span style="color: rgba(128,118,105)">请输入密码:</span>
+		<input class="inp" type="password" placeholder="请输入密码" style="background: rgba(255,255,255,0.1)">
+		<p class="notice"></p>
+		<span style="color: rgba(128,118,105)">请确认密码:	</span>
+		<input class="inp" type="password" placeholder="请确认密码" style="background: rgba(255,255,255,0.1)">
+		<p class="notice"></p>
+		
+		<div>
+			<input class="inp code" type="text" placeholder="验证码" style="background: rgba(255,255,255,0.1)">
+			<button class="getCode" style="background: rgba(255,255,255,0.1)"><span style="color: rgba(128,118,105)">获取验证码</span></button>
+		</div>
+		<div class="codeImg">
+			<!-- 点击‘获取验证码’按钮后，在此处添加 验证码图片的img标签 -->
+		</div>
+		<div>
+			<input type="checkbox" name="" checked=""><span style="color: rgba(128,118,105)">我已同意</span><a href="#">《Armani服务协议》</a>
+		</div>
+		<p class="notice"></p>
+		<button class="btn">注册</button>
+	</div>
+	<div class="box2">
+		<p class="tit">
+			<span class="bra1"><button class="brand1">用户注册</button></span>
+			<span><button class="brand1">用户登录</button></span>
+		</p>
+		<span style="color: rgba(128,118,105)">手机号:</span>
+		<button class="number1" style="background: rgba(255,255,255,0.1)">+ 86</button>
+		<input class="inp" type="text" placeholder="请输入手机号" style="background: rgba(255,255,255,0.1)">
+		<p class="notice"></p>
+		<span style="color: rgba(128,118,105)">请输入密码:</span>
+		<input class="inp" type="password" placeholder="请输入密码" style="background: rgba(255,255,255,0.1)">
+		<p class="notice"></p>
+		<input type="checkbox" checked><span style="color: rgba(128,118,105);background-color: rgba(255,255,255,0.1);">下次自动登录</span>
+		<button class="btn2">登录</button>
+	</div>
+	<script>
+		var box1 = document.getElementsByClassName("box1");
+		var box2 = document.getElementsByClassName("box2");
+		var inp = document.getElementsByClassName("inp");
+		var notice = document.getElementsByClassName("notice");
+		inp[0].onfocus = function () {
+			notice[0].innerText = "请输入13位手机号";
+		}
+		var a;
+		inp[0].onblur = function () {
+			var z = /^.{13,13}$/;
+			a = z.test(inp[0].value);
+			if (a) {
+				notice[0].innerText = " ";
+			} else {
+				notice[0].innerText = "手机号位数不对";
+			}
+		}
+		var b;
+		inp[1].onblur = function () {
+			var z = /^.{4,12}$/;
+			b = z.test(inp[1].value);
+			if (b) {
+				notice[1].innerText = " ";
+			} else {
+				notice[1].innerText = "密码位数不对";
+			}
+		}
+		var getCode = document.getElementsByClassName("getCode");
+		var arry = [{//验证码
+			name: 'zAZfB.jpg',
+			code: 'zAZfB',
+		}, {
+			name: 'ZEhUN.jpg',
+			code: 'ZEhUN'
+		}, {
+			name: 'zFC9H.jpg',
+			code: 'zFC9H'
+		}, {
+			name: 'zhWY9.jpg',
+			code: 'zhWY9'
+		}, {
+			name: 'Zin4c.jpg',
+			code: 'Zin4c'
+		}, {
+			name: 'ZITGj.jpg',
+			code: 'ZITGj'
+		}, {
+			name: 'zJ6iV.jpg',
+			code: 'zJ6iV'
+		}, {
+			name: 'zjsKP.jpg',
+			code: 'zjsKP'
+		}, {
+			name: 'ZKc9S.jpg',
+			code: 'ZKc9S'
+		}, {
+			name: 'zKDXU.jpg',
+			code: 'zKDXU'
+		}]
+		var i;
+		var but = document.getElementsByClassName("brand");
+		var but1 = document.getElementsByClassName("brand1");
+		var but2 = document.getElementsByClassName("getCode");
+		var codeImg = document.getElementsByClassName("codeImg");
+		but[0].onclick = function () {
+			box2[0].style.display = "none";
+			box1[0].style.display = "block";
+		}
+		but[1].onclick = function () {
+			box1[0].style.display = "none";
+			box2[0].style.display = "block";
+		}
+		but1[0].onclick = function () {
+			box2[0].style.display = "none";
+			box1[0].style.display = "block";
+		}
+		but1[1].onclick = function () {
+			box1[0].style.display = "none";
+			box2[0].style.display = "block";
+		}
+		but2[0].onclick = function(){
+			i = parseInt(Math.random() * 9);
+			notice[2].innerText = " ";
+			codeImg[0].innerHTML = "<img src='image/" + arry[i].name + "'>";
+		}
+		var c;
+		inp[2].onfocus = function () {
+			notice[2].innerText = " ";
+		}
+		inp[2].onblur = function () {
+			c = (arry[i].code === inp[2].value);
+			console.log(c);
+			if(!c) {
+				notice[2].innerText = "验证码错误";
+			}else{
+				notice[2].innerText = " ";
+			}
+		}
+		var btn = document.getElementsByClassName("btn");
+		var btn = document.getElementsByClassName("btn2");
+		btn[0].onclick = function () {
+			if (a && b && c) {
+				alert("注册成功");
+			} else {
+				alert("有信息输入错误，请重新输;");
+			}
+		}
+		// btn2[0].onclick = function(){
+
+		// }
+	</script>
+</body>
+</html>
